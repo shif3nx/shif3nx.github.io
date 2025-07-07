@@ -40,7 +40,7 @@
 		}
 
 		.background {
-			background-color: #ece5f0;
+			background-color: #FFF2E0;
 		}
 
 		.border {
@@ -50,7 +50,7 @@
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #9B7EBD;
 		}
 	</style>
 </head>
@@ -59,19 +59,14 @@
 
 	<nav class="navMenu  border">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
-		<a id="inbox" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Inbox</a>
-		<a id="week" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
-		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Projects</a>
-		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
-		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
+		<a id="planner" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-inbox"></i> Planner</a>
+		<a id="habit" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Habit</a>
+		<a id="reading log" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-briefcase"></i> Reading Log</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Projects</a>
+		<a id="note" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Note</a>
 		<a id="knowledge" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Knowledge</a>
-		<a id="topics" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Topics</a>
-		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Notes</a>
-		<a id="media" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bookmark"></i> Media</a>
-		<a id="resourses" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-wrench"></i> Resourses</a>
-		<a id="lifewiki" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-heart"></i> Lifewiki</a>
-
-
+		<a id="homie" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-layer-group"></i> Homie</a>
+		<a id="financial" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Financial</a>
 
 	</nav>
 
@@ -88,31 +83,22 @@
 
 			if (id == 'home')
 				window.open("https://www.notion.so/23427c1a0bd6499384273ced39253904", '_blank').focus();
-			else if (id == "inbox")
-				window.open("https://www.notion.so/Inbox-91a8ce98118147d384c511c67833bb6d", '_blank').focus();
-			else if (id == "week")
-				window.open("https://www.notion.so/shorouk/This-Week-bd3171730a4c4a9097399770acde9882", '_blank').focus();
-			else if (id == "month")
-				window.open("https://www.notion.so/shorouk/This-Month-c18ee8ef9c754f088670caa55df0b0e0", '_blank').focus();
+			else if (id == "planner")
+				window.open("https://www.notion.so/Planner-2299c6cd57878074824ff0939687978e", '_blank').focus();
+			else if (id == "habit")
+				window.open("https://www.notion.so/Habit-2299c6cd578780e8bc4bf9c7658ca904", '_blank').focus();
+			else if (id == "reading log")
+				window.open("https://www.notion.so/Reading-Log-2299c6cd578780e1adf7f1acab5c8bec", '_blank').focus();
 			else if (id == "projects")
-				window.open("https://www.notion.so/Projects-e6745abbeaf0418aab7b9f6c57f3aba0", '_blank').focus();
-			else if (id == "business")
-				window.open("https://www.notion.so/shorouk/Business-Dashboard-75f3e1cb7d0a4895929ec5feed780e55", '_blank').focus();
-			else if (id == "tasks")
-				window.open("https://www.notion.so/Task-Manager-48ea6f04eaf24aa0889a5b5de34ea415", '_blank').focus();
+				window.open("https://www.notion.so/Projects-2299c6cd578780c6a974ff8784c2e03b", '_blank').focus();
+			else if (id == "note")
+				window.open("https://www.notion.so/Note-2299c6cd578780ecb80cf8abf2fd9e2d", '_blank').focus();
 			else if (id == "knowledge")
-				window.open("https://www.notion.so/My-Knowledge-Base-7b003813544d478b9f61d813cfaefae5", '_blank').focus();
-			else if (id == "topics")
-				window.open("https://www.notion.so/Topics-Browser-bb6d50722de74a0e8cc2e678e76b0a44", '_blank').focus();
-			else if (id == "notes")
-				window.open("https://www.notion.so/The-Notebook-6939d2ac0fa84089a3c83ca657c9cdfb", '_blank').focus();
-			else if (id == "media")
-				window.open("https://www.notion.so/Multimedia-Library-74c4d2eea2fc4f25b3fdebaaea4de2c3", '_blank').focus();
-			else if (id == "resourses")
-				window.open("https://www.notion.so/Resources-Library-766dde1a6f1e4a3499b9d65a8013e5e3", '_blank').focus();
-			else if (id == "lifewiki")
-				window.open("https://www.notion.so/My-Life-wiki-51e257c76f984c2cb58858573a101989", '_blank').focus();
-
+				window.open("https://www.notion.so/Knowledge-2299c6cd578780718521dd1d1d29d277", '_blank').focus();
+			else if (id == "homie")
+				window.open("https://www.notion.so/Homie-2299c6cd578780b8801df8ff13996274", '_blank').focus();
+			else if (id == "financial")
+				window.open("https://www.notion.so/Financial-2299c6cd578780a6b021e1a7307a793c", '_blank').focus();
 		}
 	</script>
 
